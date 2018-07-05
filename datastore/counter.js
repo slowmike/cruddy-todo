@@ -40,7 +40,7 @@ const writeCounter = (count, callback) => {
 
 exports.getNextUniqueId = (callback) => {
   readCounter((err, curVal) => {
-    writeCounter(curVal+1, callback);
+    writeCounter(curVal + 1, callback);
   });
 };
 
